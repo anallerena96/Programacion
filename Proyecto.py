@@ -285,3 +285,154 @@ def inicio():
             total=total+(cant*price)
             acumcant=acumcant+cant
             
+        elif a==4:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=3500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==0:
+            return (inicio())
+        
+        else:
+            print("Opcion invalida")
+            for (x,y) in jugo_frutas:
+                print(str(x)+"........"+str(y))
+            a=int(input("Marca la opcion de jugo de frutas que deseas: "))
+        print("Subtotal: $" + str(total))
+        
+    if n==6:
+        print ("GASEOSAS Y JUGOS EMBOTELLADOS")
+        Gase_jug={}
+        Gase_jug["1. Coca-Cola    "]="$1.500"
+        Gase_jug["2. Cuatro       "]="$1.500"
+        Gase_jug["3. Sprite       "]="$1.500"
+        Gase_jug["4. Fanta naranja"]="$1.500"
+        Gase_jug["5. Fanta uva    "]="$1.500"
+        Gase_jug["6. Fanta manzana"]="$1.500"
+        Gase_jug["7. Jugos Hit    "]="$1.500"
+        Gase_jug["0. Regresar     "]=""
+
+        gaseosas_jugos = Gase_jug.items()
+
+        for (x,y) in gaseosas_jugos:
+             print(str(x)+"........"+str(y))
+        a=int(input("Marca la opcion de jugo de gaseosas y jugos embotellados que deseas: "))
+        if a==1:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==2:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==3:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==4:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==5:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==6:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==7:
+            cant=int(input("¿Cuantas unidades desea? "))
+            price=1500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==0:
+            return (inicio())
+        
+        else:
+            print("Opcion invalida")
+            for (x,y) in jugo_frutas:
+                print(str(x)+"........"+str(y))
+            a=int(input("Marca la opcion de Jugo de frutas que deseas: "))
+            
+        print("Subtotal: $" + str(total))
+    if n==7:
+        print("ESPECIALES")
+        Espe={}
+        Espe["1. Caldo de costilla "]="$3.500"
+        Espe["2. Caldo de pajarilla"]="$3.500"
+        Espe["3. Tamal             "]="$3.000"
+        Espe["4. Lechona           "]="$4.500"
+        Espe["0. Regresar          "]=""
+
+        especiales= Espe.items()
+
+        for (x,y) in especiales:
+            print(str(x)+"........"+str(y))
+        a=int(input("Marca la opcion de Especiales que deseas: "))
+        
+        if a==1:
+            cant=int(input("¿Cuantas unidades desea?: "))
+            price=3500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==2:
+            cant=int(input("Cuantas unidades desea?"))
+            price=3500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==3:
+            cant=int(input("Cuantas unidades desea?"))
+            price=3000
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==4:
+            cant=int(input("Cuantas unidades desea?"))
+            price=4500
+            total=total+(cant*price)
+            acumcant=acumcant+cant
+            
+        elif a==0:
+            return (inicio())
+        
+        else:
+            print("Opcion invalida")
+            for (x,y) in jugo_frutas:
+                print(str(x)+"........"+str(y))
+            a=int(input("Marca la opcion de gaseosas y jugos embotellados que deseas: "))
+        print("Subtotal: $" + str(total))
+        
+    if n>7:
+        print ("EL NÚMERO INGRESADO NO CORRESPONDE A NINGUN MENÚ.")
+        return (inicio())
+    if n<1:
+        print ("EL NÚMERO INGRESADO NO CORRESPONDE A NINGUN MENÚ.")
+        return (inicio())
+    
+    print("RESUMEN DE COMPRA")
+    
+    print("Cantidad de productos: " + str(acumcant))
+    
+    print("Total a pagar: $" + str(total))
+
+inicio()
+
+        
+

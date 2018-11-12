@@ -42,7 +42,6 @@ Huev["0. Regresar      "]=0
 huevos= Huev.items()
 huevos_p=Huev.values()
 
-
 Bebi_cal={}
 Bebi_cal["1. Chocolate     "]=1500
 Bebi_cal["2. Cafe con leche"]=1000
